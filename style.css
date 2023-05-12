@@ -1,0 +1,129 @@
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ffeedf;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+    --bg-img-layer: -10;
+    --nav-layer: 10;
+
+}
+
+/* --- Variables --- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #145434;
+    align-items: center;
+    color: #145434;
+}
+
+nav h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#beers {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    color: #ffeedf;
+    margin: 50px 10px 50px 250px;
+    align-items: center;
+
+}
+
+.cards {
+    position: relative;
+    background-color: #145434;
+    padding: 60px;
+    min-width: 400px;
+
+}
+
+#beers h1 {
+    font-size: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ffeedf;
+}
+
+.details {
+    position: absolute;
+    right: -20px;
+    bottom: -10px;
+    padding: 10px 0px 10px 80px;
+    background-color: #ffeedf;
+    color: #145434;
+    border-radius: 2px solid #145434;
+}
+
+.number {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 50%;
+    text-align: center;
+    padding: 5px 13px;
+    font-size: 20px;
+    background-color: #ffeedf;
+    border: 1px solid #145434;
+    color: #145434;
+    transform: translate(-50%, -50%);
+}
+
+.type {
+    padding-top: 10px;
+}
+
+.boldpart {
+    font-weight: bold;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    justify-self: flex-end;
+    padding-left: 50px;
+    padding-right: 10px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' -25,
+        'opsz' 48
+}
